@@ -72,9 +72,16 @@ module.exports = __webpack_require__(1);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-console.log("hello world from webpack");
+"use strict";
+
+
+var names = { name: "mufasa", kids: 1 };
+var kids = names.kids,
+    name = names.name;
+
+console.log(name, kids);
 
 /***/ })
 /******/ ]);
