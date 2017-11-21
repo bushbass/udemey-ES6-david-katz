@@ -1,1 +1,7 @@
-console.log("hello world from webpack with a third auto update");
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Global from './components/Global';
+
+ReactDOM.render(
+    <Global />, document.getElementById('root')
+);
