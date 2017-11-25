@@ -37,7 +37,7 @@ class Global extends Component {
               </InputGroup.Addon>
             </InputGroup> 
           </FormGroup>
-
+          <Gallery items = {this.state.items} />
       </div>
     )
   }
