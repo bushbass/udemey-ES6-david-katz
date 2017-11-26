@@ -7,7 +7,8 @@ class Gallery extends Component {
       <div>
         {
           this.props.items.map((item, index) => {
-            let {title, imageLinks, infoLink} = item.volumeInfo;
+            let {title, imageLinks, infoLink, subtitle} = item.volumeInfo;
+            let {country} = item.saleInfo;
             return (
               <a 
               key={index} 
@@ -15,7 +16,11 @@ class Gallery extends Component {
               className="book"
               target="_blank" >
                 <img className="book-img" src ={imageLinks !== undefined ? imageLinks.thumbnail : alternate} alt= "book image" />
-                <div className="book-text">{title}</div>
+                <div className="book-text">
+                  {title}<br />
+                  {subtitle}<br />
+                  Published in {country}
+                </div>
                 
               </a>
 
